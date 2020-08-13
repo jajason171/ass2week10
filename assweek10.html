@@ -1,0 +1,49 @@
+<html>
+<head>
+	<h1>Week 10 assignment2</h1>
+</head>
+<body>
+	<h2>Task#1: Show width and height; current location, and a reload button</h2>
+
+	<p><i>The width and height should be dynamically changed when you resize the window</i></p>
+	<p><span id="width">Width:</span></p>
+	<p><span id="height">Height:</span></p>
+	<p><span id="location">Current location: </span></p>
+	<button value="Reload" onClick="window.location.reload()">Reload</button>
+	<hr />
+
+	<h2>Task#2: Manipulating DOM</h2>
+
+	<p><i>Instructions as described on the buttons</i></p>
+	<p id="p1">P1 with an id</p>
+	<p id="p2">P2 with an id</p>
+	<p id="p3">P3 with an id</p>
+	<button id="color" onClick="changeColor()">Change the background color of the P tag</button>
+	<button id="Append" onClick="append()">Append the "Hello ITE120!" at the end of the P tag</button>
+	<button id="hide" onClick="showHide()">(Show/Hide) the P Tag</button>
+	<br/>
+	<br/>
+	<hr />
+	<br/>
+
+	<h2>Task#3: Mouse and Click Event</h2>
+
+	<p><i>Show "On Mouse Over" when I move the mouse over the link; Show "On Mouse Out" when i move the mouse out of the link;</i></p>
+	<p><i>Show "On Mouse Down" when I click and hold the mouse on the link; Show "On Mouse Up" when I release the mouse from the link;</i></p>
+	<p><i>Show "On Double Click" when I double click the mouse on the link;</i></p>
+	<div><a id="over-out-event" onmouseover="mouseOver()" onmouseout="mouseOut()" href="">On Mouse Out!</a></div>
+	<div><a id="up-down-event" onmousedown="mouseDown()" onmouseup="mouseUp()" href="">Click mouse here!</a></div>
+	<div><a id="double-click-event" ondblclick="doubleClick()" href="">Double click here!</a></div>
+	<hr />
+
+
+	
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+<script src="ass2week10.js"></script>
+
+</body>
+</html>
